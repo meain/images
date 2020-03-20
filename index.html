@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>images - meain</title>
+    <style>
+      body {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
+          Arial, sans-serif;
+        font-size: 10vw;
+      }
+    </style>
+  </head>
+  <body>
+    ...
+    <script>
+      window.onload = function() {
+        var symbols = [
+          ["^-^"],
+          ["OoO"],
+          ["ಠ_ಠ"],
+          ["(ᵔᴥᵔ)"],
+          ["(╯°□°)╯︵"],
+          ["¯\\_(ツ)_/¯"],
+          ["ヾ(⌐■_■)ノ"],
+          ["◉_◉"],
+          ["(~˘▾˘)~"],
+          ["⚆ _ ⚆"],
+          ["¬_¬"],
+          ["^̮^"]
+        ];
+        var symbol = symbols[Math.floor(Math.random() * symbols.length)];
+        document.getElementsByTagName("body")[0].innerText = symbol;
+      };
+    </script>
+  </body>
+</html>
